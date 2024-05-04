@@ -6,9 +6,9 @@
 		../../modules/apps/apps.nix
 		../../modules/system/de/gnome.nix
 	];
+	config.boot.kernelPackages = pkgs.linuxPackages_zen;
 
 	config.environment.systemPackages = with pkgs; [
-		bluez
 	];
 
 	config.networking.hostName = "alpha";
@@ -28,6 +28,4 @@
 			};
 		};
 	};
-
-	config.services.blueman.enable = true;
 }

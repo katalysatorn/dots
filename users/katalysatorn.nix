@@ -2,7 +2,7 @@
 	users.users.katalysatorn = {
 		isNormalUser = true;
 		description = "Blair Burton";
-		extraGroups = [ "networkmanager" "wheel" ];
+		extraGroups = [ "networkmanager" "wheel" "bluetooth" ];
 	};
 
 	home-manager.users.katalysatorn = { pkgs, ... }: {
@@ -10,10 +10,10 @@
 			neovim
 		];
 
-		programs.fish.enable = true;
-
 		home.stateVersion = "23.11";
 
 		programs.home-manager.enable = true;
+
+		programs.zsh.enable = true;
 	};
 }
