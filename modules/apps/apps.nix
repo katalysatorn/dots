@@ -3,7 +3,7 @@
 {
 	imports = with pkgs; [
 		./apps-cli.nix
-		./steam.nix
+		./gaming.nix
 	];
 
 	environment.systemPackages = with pkgs; [
