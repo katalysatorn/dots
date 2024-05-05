@@ -24,4 +24,5 @@ require('lazy').setup({
 	{ 'hrsh7th/nvim-cmp' },
 	{ 'L3MON4D3/LuaSnip' },
 	{ 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
+	{ 'ms-jpq/coq_nvim' },
 })

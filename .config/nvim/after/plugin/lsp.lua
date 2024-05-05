@@ -1,5 +1,6 @@
 local lsp = require("lsp-zero")
 local cmp = require("cmp")
+local coq = require("coq")
 local cmp_action = require("lsp-zero").cmp_action()
 
 lsp.preset('recommended')
@@ -24,14 +25,30 @@ end)
 
 -- to learn how to use mason.nvim
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
-require('mason').setup({})
-require('mason-lspconfig').setup({
-  ensure_installed = { 'html', 'rust_analyzer', 'gopls', 'markdown_oxide' },
-  handlers = {
-    function(server_name)
-      require('lspconfig')[server_name].setup({})
-    end,
-  },
-})
+-- require('mason').setup({})
+-- require('mason-lspconfig').setup({
+--   ensure_installed = { 'html', 'rust_analyzer', 'gopls', 'markdown_oxide' },
+--   handlers = {
+--     function(server_name)
+--       require('lspconfig')[server_name].setup({})
+--     end,
+--   },
+-- })
+require("mason").setup()
+require("mason-lspconfig").setup()
 
-lsp.setup()
+require("mason-lspconfig").setup_handlers {
+	-- The first entry (without a key) will be the default handler
+	-- and will be called for each installed server that doesn't have
+	-- a dedicated handler.
+	function (server_name) -- default handler (optional)
+		require("lspconfig")[server_name].setup {}
+	end,
+	-- Next, you can provide a dedicated handler for specific servers.
+	-- For example, a handler override for the `rust_analyzer`:
+--	["rust_analyzer"] = function ()
+--		require("rust-tools").setup {}
+--	end
+}
+
+lsp.setup(coq.lsp_ensure_capabilities())
