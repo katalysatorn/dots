@@ -1,3 +1,24 @@
+# Fish Ignore
 .config/fish/functions/_tide_**
 fish_variables
 
+# Random Configs
+.config/cef_user_data/**
+.config/google-chrome/**
+.config/heroic/**
+.config/dconf/**
+.config/htop/**
+.config/libvirt/**
+.config/monitors.xml
+.config/monitors.xml~
+.config/partitionmanager.kmessagebox
+.config/partitionmanagerrc
+.config/swtpm-localca.conf
+.config/swtpm-localca.options
+.config/swtpm_setup.conf
+.config/systemd/**
+.config/user
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/var/**
+.config/via-nativia/**
