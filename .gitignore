@@ -22,3 +22,4 @@ fish_variables
 .config/user-dirs.locale
 .config/var/**
 .config/via-nativia/**
+.config/evolution/**
