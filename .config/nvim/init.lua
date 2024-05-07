@@ -1,1 +1,0 @@
-require("katalysatorn.init");
