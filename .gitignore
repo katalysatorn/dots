@@ -23,3 +23,7 @@ fish_variables
 .config/var/**
 .config/via-nativia/**
 .config/evolution/**
+
+# VSCode
+.config/Code - OSS/**
+.config/VSCodium - Insiders/**
