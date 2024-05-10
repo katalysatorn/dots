@@ -27,3 +27,5 @@ fish_variables
 # VSCode
 .config/Code - OSS/**
 .config/VSCodium - Insiders/**
+
+.config/onedrive/**
