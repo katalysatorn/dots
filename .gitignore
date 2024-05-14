@@ -1,6 +1,8 @@
 # Fish Ignore
 .config/fish/functions/_tide_**
+fish_plugins
 fish_variables
+fisher.fish
 
 # Random Configs
 .config/cef_user_data/**
@@ -24,6 +26,7 @@ fish_variables
 .config/via-nativia/**
 .config/evolution/**
 .config/.gsd-keyboard.settings-ported
+.config/pulse/**
 
 # VSCode
 .config/Code - OSS/**
