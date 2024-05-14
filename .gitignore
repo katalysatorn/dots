@@ -1,6 +1,5 @@
 # Fish Ignore
 .config/fish/functions/_tide_**
-fish_plugins
 fish_variables
 fisher.fish
 
