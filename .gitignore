@@ -5,3 +5,8 @@ fisher.fish
 
 # Pavucontrol changes depending on orientation
 .config/pavucontrol.ini
+
+
+# KDE stuffs
+.config/kde.org/UserFeedback.org.kde.dolphin.conf
+.config/session/dolphin_dolphin_dolphin
