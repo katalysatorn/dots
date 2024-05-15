@@ -26,6 +26,7 @@ fisher.fish
 .config/evolution/**
 .config/.gsd-keyboard.settings-ported
 .config/pulse/**
+.config/session/**
 
 # VSCode
 .config/Code - OSS/**
