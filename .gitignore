@@ -4,33 +4,3 @@ fish_variables
 fisher.fish
 
 # Random Configs
-.config/cef_user_data/**
-.config/google-chrome/**
-.config/heroic/**
-.config/dconf/**
-.config/htop/**
-.config/libvirt/**
-.config/monitors.xml
-.config/monitors.xml~
-.config/partitionmanager.kmessagebox
-.config/partitionmanagerrc
-.config/swtpm-localca.conf
-.config/swtpm-localca.options
-.config/swtpm_setup.conf
-.config/systemd/**
-.config/user
-.config/user-dirs.dirs
-.config/user-dirs.locale
-.config/var/**
-.config/via-nativia/**
-.config/evolution/**
-.config/.gsd-keyboard.settings-ported
-.config/pulse/**
-.config/session/**
-
-# VSCode
-.config/Code - OSS/**
-.config/VSCodium - Insiders/**
-
-.config/onedrive/**
-.config/obsidian/**
