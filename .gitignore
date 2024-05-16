@@ -6,14 +6,6 @@ tide
 tide.fish
 _tide_init.fish
 
-# Pavucontrol changes depending on orientation
-.config/pavucontrol.ini
-
-
-# KDE stuffs
-.config/kde.org/UserFeedback.org.kde.dolphin.conf
-.config/session/dolphin_dolphin_dolphin
-
 .config/htop/**
 .config/looking-glass/**
 .config/user-dirs.dirs
@@ -24,3 +16,7 @@ _tide_init.fish
 # bad bowsers
 .config/google-chrome/**
 .config/microsoft-edge/**
+
+# no onedrive
+.config/onedrive/**
+.config/onedrive-gui/**

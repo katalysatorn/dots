@@ -5,6 +5,7 @@ RightButton;NoModifier=org.kde.contextmenu
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
+ItemGeometries-2048x1280=
 ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
 activityId=4b48a714-2cf7-43fb-a646-f4841113c240
@@ -50,18 +51,6 @@ plugin=org.kde.plasma.digitalclock
 [Containments][3][Applets][21][Configuration][Appearance]
 fontWeight=400
 
-[Containments][3][Applets][4]
-immutability=1
-plugin=org.kde.plasma.kickoff
-
-[Containments][3][Applets][4][Configuration]
-PreloadWeight=100
-popupHeight=510
-popupWidth=647
-
-[Containments][3][Applets][4][Configuration][Shortcuts]
-global=Alt+F1
-
 [Containments][3][Applets][6]
 immutability=1
 plugin=org.kde.plasma.icontasks
@@ -80,17 +69,17 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][3][Applets][8][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 SystrayContainmentId=9
 
 [Containments][3][General]
-AppletOrder=4;6;8;21
+AppletOrder=6;8;21
 
 [Containments][9]
 activityId=
 formfactor=2
 immutability=1
-lastScreen=-1
+lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
@@ -105,9 +94,15 @@ plugin=org.kde.plasma.cameraindicator
 immutability=1
 plugin=org.kde.plasma.clipboard
 
+[Containments][9][Applets][11][Configuration]
+PreloadWeight=60
+
 [Containments][9][Applets][12]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
+
+[Containments][9][Applets][12][Configuration]
+PreloadWeight=55
 
 [Containments][9][Applets][13]
 immutability=1
@@ -116,6 +111,9 @@ plugin=org.kde.plasma.manage-inputmethod
 [Containments][9][Applets][14]
 immutability=1
 plugin=org.kde.plasma.notifications
+
+[Containments][9][Applets][14][Configuration]
+PreloadWeight=55
 
 [Containments][9][Applets][15]
 immutability=1
@@ -134,7 +132,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][9][Applets][18][Configuration]
-PreloadWeight=55
+PreloadWeight=70
 
 [Containments][9][Applets][18][Configuration][General]
 migrated=true
@@ -173,9 +171,16 @@ plugin=org.kde.plasma.mediacontroller
 [Containments][9][Applets][27][Configuration]
 PreloadWeight=42
 
+[Containments][9][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][9][General]
 extraItems=org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.printmanager
+hiddenItems=org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.kscreen,org.kde.plasma.brightness
+iconSpacing=6
 knownItems=org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.printmanager
+scaleIconsToFit=true
 
 [ScreenMapping]
 itemsOnDisabledScreens=

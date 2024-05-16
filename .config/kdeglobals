@@ -133,13 +133,13 @@ ForegroundPositive=166, 227, 161
 ForegroundVisited=203, 166, 247
 
 [General]
-ColorSchemeHash=cb4c6ee5cc9a59dbe09fb467a529af1bf5c55c97
+ColorSchemeHash=375c7be532f0aed454f6829e29e2f17b18b4d1ca
 
 [KDE]
 LookAndFeelPackage=Catppuccin-Mocha-Lavender
 
 [KScreen]
-ScreenScaleFactors=eDP-2=1;DP-10=1;
+ScreenScaleFactors=eDP-2=1;
 
 [WM]
 activeBackground=30,30,46
