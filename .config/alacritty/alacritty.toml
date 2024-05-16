@@ -6,7 +6,7 @@ import = [
 [window]
 dimensions = { columns = 100, lines = 45 }
 padding = { x = 10, y = 10 }
-decorations = "None"
+#decorations = "None"
 opacity = 0.8
 
 [font]

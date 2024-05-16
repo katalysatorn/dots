@@ -2,6 +2,9 @@
 .config/fish/functions/_tide_**
 fish_variables
 fisher.fish
+tide
+tide.fish
+_tide_init.fish
 
 # Pavucontrol changes depending on orientation
 .config/pavucontrol.ini
