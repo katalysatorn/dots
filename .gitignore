@@ -20,3 +20,7 @@ _tide_init.fish
 .config/user-dirs.locale
 .config/dconf/**
 .config/freerdp/**
+
+# bad bowsers
+.config/google-chrome/**
+.config/microsoft-edge/**
