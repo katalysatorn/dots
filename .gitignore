@@ -10,3 +10,10 @@ fisher.fish
 # KDE stuffs
 .config/kde.org/UserFeedback.org.kde.dolphin.conf
 .config/session/dolphin_dolphin_dolphin
+
+.config/htop/**
+.config/looking-glass/**
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/dconf/**
+.config/freerdp/**
