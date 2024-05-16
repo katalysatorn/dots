@@ -1,6 +1,15 @@
 [Desktops]
 Id_1=c8cd0d63-469a-4a8a-9822-3cc82bd663dc
-Number=1
+Id_10=19d0a8c5-46c8-4eef-841e-17aff46d8c4d
+Id_2=170d6868-deb1-4e56-9258-cb9bc7a4a474
+Id_3=c6e5d5f9-e927-4556-8ddc-34de286c1d4a
+Id_4=0b980d09-f084-4f95-84e6-ac4ac1b447c0
+Id_5=bc361723-f6ca-484e-8d87-86cb289aa241
+Id_6=adfae834-f330-4087-9d89-fd339f778ab9
+Id_7=2e6c3fd9-5427-43f4-ab2d-360d5e387e88
+Id_8=55f70ec6-0e10-4c06-8bb8-cf7e2e2846b8
+Id_9=4c293901-93d0-401b-bd31-3c60b2dc9312
+Number=10
 Rows=1
 
 [Tiling]
@@ -13,4 +22,4 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Xwayland]
-Scale=1.75
+Scale=1.25

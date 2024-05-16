@@ -1,5 +1,19 @@
+[ActionsWidget]
+ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA+gAAAAEAAAAAAAABVQAAAAEAAAAAAAAD6AAAAABkAAAAAA==
+
+[ConfigDialog]
+2048x1280 screen: Height=550
+2048x1280 screen: Width=772
+
+[General]
+Number of Actions=0
+
+[PlasmaTransientsConfig]
+PreloadWeight=26
+
 [PlasmaViews][Panel 3]
 floating=1
+panelLengthMode=0
 
 [PlasmaViews][Panel 3][Defaults]
 thickness=44
