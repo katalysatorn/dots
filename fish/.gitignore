@@ -1,4 +1,10 @@
 fish_variables
 fisher.fish
 functions/fisher.fish
+completions/**
 
+functions/_tide*
+functions/tide/*
+functions/tide.fish
+functions/fish_mode_prompt.fish
+conf.d/_tide*
