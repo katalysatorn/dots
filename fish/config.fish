@@ -11,3 +11,5 @@ end
 set fish_greeting
 
 zoxide init fish --cmd cd | source
+
+fish_add_path $HOME/.bun/bin
