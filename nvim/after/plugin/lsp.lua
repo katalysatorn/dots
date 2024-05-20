@@ -33,6 +33,7 @@ require('mason-lspconfig').setup({
 		'lua_ls',
 		'markdown_oxide',
 		'pylsp',
+		'tsserver'
 	},
 	handlers = {
 		function(server_name)
