@@ -26,10 +26,8 @@ end)
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	ensure_installed = {
-		'clangd',
 		'cmake',
 		'gopls',
-		'kotlin_language_server',
 		'lua_ls',
 		'markdown_oxide',
 		'pylsp',
