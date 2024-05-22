@@ -26,7 +26,7 @@
             		"critical": 15
         	},
         	"format": "{icon} {capacity}%",
-        	"format-charging": "  {capacity}%",
+        	"format-charging": " c {capacity}%",
         	"format-plugged": " ",
         	"format-alt": "{time} {icon}",
         	"format-full": "  {capacity}%",
@@ -35,8 +35,8 @@
     "clock": {
         "timezone": "Pacific/Auckland",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%Y-%m-%d}",
-        "format-alt": "{:%H:%M}"
+        "format": "{:%Y-%m-%d - %H:%M}",
+        "format-alt": "{:%Y-%m-%d - %H:%M}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
