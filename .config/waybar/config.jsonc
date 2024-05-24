@@ -49,7 +49,7 @@
     },
     "custom/lock": {
         "tooltip": false,
-        "on-click": "hyprlock & disown",
+        "on-click": "swaylock & disown",
         "format": "",
     },
 }
