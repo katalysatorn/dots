@@ -26,10 +26,10 @@
             		"critical": 15
         	},
         	"format": "{icon} {capacity}%",
-        	"format-charging": " c {capacity}%",
+        	"format-charging": "C {capacity}%",
         	"format-plugged": " ",
         	"format-alt": "{time} {icon}",
-        	"format-full": "  {capacity}%",
+        	"format-full": "F",
         	"format-icons": [" ", " ", " ", " ", " "]
 	},
     "clock": {
