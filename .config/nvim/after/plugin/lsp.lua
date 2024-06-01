@@ -27,11 +27,10 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
 	ensure_installed = {
 		'cmake',
-		'gopls',
+		'rust_analyzer',
 		'lua_ls',
 		'markdown_oxide',
 		'pylsp',
-		'tsserver'
 	},
 	handlers = {
 		function(server_name)

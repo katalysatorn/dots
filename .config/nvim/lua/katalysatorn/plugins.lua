@@ -64,4 +64,5 @@ require('lazy').setup({
 		}
 	},
 	{ "fladson/vim-kitty" },
+	{ 'machakann/vim-sandwich' },
 })
