@@ -31,5 +31,6 @@
         // I actually don't know what this is yet...
         "hour_format": "hour24"
     },
-    "tab_size": 4
+    "tab_size": 4,
+    "relative_line_numbers": true
 }
