@@ -3,21 +3,41 @@ local lspconfig = require('lspconfig')
 lspconfig.intelephense.setup({})
 
 local cmp = require('cmp')
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
-local cmp_mappings = lsp_zero.defaults.cmp_mappings({
-	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-	['<C-y>'] = cmp.mapping.confirm({ select = true }),
-	["<C-Space>"] = cmp.mapping.complete(),
+local cmp_action = lsp_zero.cmp_action()
+cmp.setup({
+  sources = {
+    {name = 'nvim_lsp'},
+  },
+  preselect = 'item',
+  completion = {
+	  completeopt = 'menu,menuone,noinsert'
+  },
+  mapping = {
+	  ['<Tab>'] = cmp.mapping.confirm({select = true}),
+	  ['<C-e>'] = cmp.mapping.abort(),
+	  ['<C-S-Tab>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
+	  ['<S-Tab>'] = cmp.mapping.select_next_item({behavior = 'select'}),
+	  ['<C-p>'] = cmp.mapping(function()
+		  if cmp.visible() then
+			  cmp.select_prev_item({behavior = 'insert'})
+		  else
+			  cmp.complete()
+		  end
+	  end),
+	  ['<C-n>'] = cmp.mapping(function()
+		  if cmp.visible() then
+			  cmp.select_next_item({behavior = 'insert'})
+		  else
+			  cmp.complete()
+		  end
+	  end),
+  },
+  snippet = {
+	  expand = function(args)
+		  require('luasnip').lsp_expand(args.body)
+	  end,
+  },
 })
-
-vim.g.coq_settings = {
-	auto_start = 'shut-up',
-	keymap = {
-		pre_select = true
-	}
-}
-local coq = require('coq')
 
 lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
@@ -34,7 +54,7 @@ require('mason-lspconfig').setup({
 	},
 	handlers = {
 		function(server_name)
-			lspconfig[server_name].setup(coq.lsp_ensure_capabilities({}))
+			lspconfig[server_name].setup({})
 		end,
 	},
 })
