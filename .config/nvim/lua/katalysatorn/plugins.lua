@@ -18,6 +18,10 @@ require('lazy').setup({
 	{ 'williamboman/mason.nvim' },
 	{ 'williamboman/mason-lspconfig' },
 	{ 'VonHeikemen/lsp-zero.nvim' },
+	{
+		'L3MON4D3/LuaSnip',
+		build = "make install_jsregxp"
+	},
 	{ 'neovim/nvim-lspconfig' },
 	{ 'hrsh7th/cmp-nvim-lsp' },
 	{ 'hrsh7th/nvim-cmp' },
