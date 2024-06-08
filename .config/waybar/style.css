@@ -2,37 +2,37 @@
 
 * {
 	background: transparent;
-  font-family: FiraCode Nerd Font;
-  font-size: 17px;
-  min-height: 0;
+	font-family: FiraCode Nerd Font;
+	font-size: 17px;
+	min-height: 0;
 }
 
 #waybar {
-  background: rgba(49, 50, 68, 80);
-  color: @text;
-  margin: 5px 5px;
+	background: rgba(49, 50, 68, 80);
+	color: @text;
+	margin: 5px 5px;
 }
 
 #workspaces {
-  border-radius: 0;
-  margin: 5px;
-  margin-left: 1rem;
+	border-radius: 0;
+	margin: 5px;
+	margin-left: 1rem;
 }
 
 #workspaces button {
-  color: @lavender;
-  border-radius: 0;
-  padding: 0.4rem;
+	color: @lavender;
+	border-radius: 0;
+	padding: 0.4rem;
 }
 
 #workspaces button.active {
-  color: @sky;
-  border-radius: 0;
+	color: @sky;
+	border-radius: 0;
 }
 
 #workspaces button:hover {
-  color: @sapphire;
-  border-radius: 0;
+	color: @sapphire;
+	border-radius: 0;
 }
 
 #custom-music,
@@ -43,60 +43,60 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: rgba(49, 50, 68, 0.2);
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
+	background-color: rgba(49, 50, 68, 0.2);
+	padding: 0.5rem 1rem;
+	margin: 5px 0;
 }
 
 #clock {
-  color: @blue;
-  border-radius: 0;
-  margin-right: 1rem;
+	color: @blue;
+	border-radius: 0;
+	margin-right: 1rem;
 }
 
 #battery {
-  color: @green;
+	color: @green;
 }
 
 #battery.charging {
-  color: @green;
+	color: @green;
 }
 
 #battery.warning:not(.charging) {
-  color: @red;
+	color: @red;
 }
 
 #backlight {
-  color: @yellow;
+	color: @yellow;
 }
 
 #backlight, #battery {
-    border-radius: 0;
+	border-radius: 0;
 }
 
 #pulseaudio {
-  color: @maroon;
-  border-radius: 0;
-  margin-left: 1rem;
+	color: @maroon;
+	border-radius: 0;
+	margin-left: 1rem;
 }
 
 #custom-music {
-  color: @mauve;
-  border-radius: 0;
+	color: @mauve;
+	border-radius: 0;
 }
 
 #custom-lock {
-    border-radius: 0;
-    color: @lavender;
+	border-radius: 0;
+	color: @lavender;
 }
 
 #custom-power {
-    margin-right: 1rem;
-    border-radius: 0;
-    color: @red;
+	margin-right: 1rem;
+	border-radius: 0;
+	color: @red;
 }
 
 #tray {
-  margin-right: 1rem;
-  border-radius: 0;
+	margin-right: 1rem;
+	border-radius: 0;
 }
