@@ -1,38 +1,38 @@
 @import "mocha.css";
 
 * {
+	background: transparent;
   font-family: FiraCode Nerd Font;
   font-size: 17px;
   min-height: 0;
 }
 
 #waybar {
-  background: transparent;
+  background: rgba(49, 50, 68, 80);
   color: @text;
   margin: 5px 5px;
 }
 
 #workspaces {
-  border-radius: 1rem;
+  border-radius: 0;
   margin: 5px;
-  background-color: @surface0;
   margin-left: 1rem;
 }
 
 #workspaces button {
   color: @lavender;
-  border-radius: 1rem;
+  border-radius: 0;
   padding: 0.4rem;
 }
 
 #workspaces button.active {
   color: @sky;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 
 #workspaces button:hover {
   color: @sapphire;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 
 #custom-music,
@@ -43,14 +43,14 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: @surface0;
+  background-color: rgba(49, 50, 68, 0.2);
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
 
 #clock {
   color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
+  border-radius: 0;
   margin-right: 1rem;
 }
 
@@ -76,27 +76,27 @@
 
 #pulseaudio {
   color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
+  border-radius: 0;
   margin-left: 1rem;
 }
 
 #custom-music {
   color: @mauve;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 
 #custom-lock {
-    border-radius: 1rem 0px 0px 1rem;
+    border-radius: 0;
     color: @lavender;
 }
 
 #custom-power {
     margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
+    border-radius: 0;
     color: @red;
 }
 
 #tray {
   margin-right: 1rem;
-  border-radius: 1rem;
+  border-radius: 0;
 }

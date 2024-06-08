@@ -3,13 +3,18 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/music", "pulseaudio", "battery", "clock", "tray", "custom/lock"],
+    "modules-right": ["custom/music", "backlight", "pulseaudio", "battery", "clock", "tray"],
     "tray": {
         "icon-size": 21,
         "spacing": 10
     },
 	"window": {
 		"max-length": 40
+	},
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
 	},
     "custom/music": {
         "format": "  {}",
