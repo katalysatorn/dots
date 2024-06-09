@@ -42,7 +42,7 @@
         "timezone": "Pacific/Auckland",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "[{:%Y-%m-%d - %H:%M}]",
-        "format-alt": "{:%Y-%m-%d - %H:%M}"
+        "format-alt": "[{:%Y-%m-%d}]"
     },
     "pulseaudio": {
         "scroll-step": 10, // %, can be a float
