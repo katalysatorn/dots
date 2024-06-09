@@ -1,29 +1,30 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/music", "backlight", "pulseaudio", "battery", "clock", "tray"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["custom/music"],
+    "modules-right": ["gamemode", "privacy", "pulseaudio", "backlight", "battery", "clock", "tray"],
     "tray": {
         "icon-size": 21,
-        "spacing": 10
+        "spacing": 10,
+		"show-passive-items": true
     },
 	"window": {
 		"max-length": 40
 	},
     "backlight": {
-        // "device": "acpi_video1",
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "scroll-step": 10, // %, can be a float
 	},
     "custom/music": {
-        "format": "  {}",
+        "format": "{}",
         "escape": true,
         "interval": 5,
-        "tooltip": false,
-        "exec": "playerctl metadata --format='{{ title }}'",
+        "tooltip": true,
+        "exec": "playerctl metadata --format='|{{title}}| by {{artist}}'",
         "on-click": "playerctl play-pause",
-        "max-length": 50
+        "max-length": 70
     },
 	"battery": {
         	"states": {
@@ -40,21 +41,16 @@
     "clock": {
         "timezone": "Pacific/Auckland",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%Y-%m-%d - %H:%M}",
+        "format": "[{:%Y-%m-%d - %H:%M}]",
         "format-alt": "{:%Y-%m-%d - %H:%M}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 10, // %, can be a float
         "format": "{icon} {volume}%",
         "format-muted": "",
         "format-icons": {
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/lock": {
-        "tooltip": false,
-        "on-click": "swaylock & disown",
-        "format": "",
-    },
+    }
 }

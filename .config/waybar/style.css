@@ -3,14 +3,20 @@
 * {
 	background: transparent;
 	font-family: FiraCode Nerd Font;
-	font-size: 17px;
+	font-size: 16px;
 	min-height: 0;
 }
 
 #waybar {
-	background: rgba(49, 50, 68, 80);
 	color: @text;
-	margin: 5px 5px;
+	background-color: rgba(49, 50, 68, 0.5);
+	margin: 0px;
+	padding: 0px;
+}
+
+#window {
+	margin-left: 4rem;
+	margin-right: 4rem;
 }
 
 #workspaces {
@@ -20,9 +26,9 @@
 }
 
 #workspaces button {
-	color: @lavender;
+	color: lavender;
 	border-radius: 0;
-	padding: 0.4rem;
+	margin-right: 0.2rem;
 }
 
 #workspaces button.active {
@@ -41,10 +47,8 @@
 #clock,
 #battery,
 #pulseaudio,
-#custom-lock,
-#custom-power {
-	background-color: rgba(49, 50, 68, 0.2);
-	padding: 0.5rem 1rem;
+#custom-lock {
+	padding: 0.2rem 1rem;
 	margin: 5px 0;
 }
 
