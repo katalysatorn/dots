@@ -1,7 +1,6 @@
 @import "mocha.css";
 
 * {
-	background: transparent;
 	font-family: FiraCode Nerd Font;
 	font-size: 16px;
 	min-height: 0;
@@ -10,6 +9,7 @@
 #waybar {
 	color: @text;
 	background-color: rgba(49, 50, 68, 0.5);
+	background: rgba(49, 50, 68, 0.9);
 	margin: 0px;
 	padding: 0px;
 }
