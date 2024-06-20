@@ -1,3 +1,5 @@
 [user]
 	email = me@katalysatorn.xyz
 	name = katalysatorn.
+[init]
+	defaultBranch = main
