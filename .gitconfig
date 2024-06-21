@@ -1,5 +1,18 @@
 [user]
 	email = me@katalysatorn.xyz
 	name = katalysatorn.
+
+[core]
+	editor = nvim
+
+[core]
+    editor = nvim
+    ; Global gitignore (applied to all repositories)
+    excludesFile = ~/.git.d/global.gitignore
+
+[commit]
+    ; Show full diff when editing commit message
+	verbose = true
+
 [init]
 	defaultBranch = main
