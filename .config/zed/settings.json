@@ -13,7 +13,7 @@
     "buffer_font_size": 16,
     "auto_update": false,
     "autosave": "on_focus_change",
-    "buffer_font_family": "FiraCodeNF-Reg",
+    "buffer_font_family": "FiraCode Nerd Font Mono",
     "buffer_font_features": {
         "calt": true
     },
@@ -25,12 +25,14 @@
         "show_nav_history_buttons": false
     },
     "tabs": {
-        "git_status": true
+        "git_status": true,
+        "file_icons": true
     },
     "journal": {
         // I actually don't know what this is yet...
         "hour_format": "hour24"
     },
     "tab_size": 4,
+    "ensure_final_newline_on_save": true,
     "relative_line_numbers": true
 }
