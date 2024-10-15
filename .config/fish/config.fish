@@ -11,3 +11,5 @@ fish_add_path ~/.cargo/bin
 
 zoxide init fish --cmd cd | source
 
+
+thefuck --alias | source
