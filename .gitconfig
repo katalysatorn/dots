@@ -3,12 +3,12 @@
 	name = katalysatorn.
 
 [core]
-	editor = nvim
-
-[core]
     editor = nvim
     ; Global gitignore (applied to all repositories)
     excludesFile = ~/.git.d/global.gitignore
+
+[push]
+	autoSetupRemote = true
 
 [commit]
     ; Show full diff when editing commit message
