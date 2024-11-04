@@ -1,0 +1,11 @@
+[Added Associations]
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+
+[Default Applications]
+text/html=io.github.zen_browser.zen.desktop
+x-scheme-handler/http=io.github.zen_browser.zen.desktop
+x-scheme-handler/https=io.github.zen_browser.zen.desktop
+x-scheme-handler/about=io.github.zen_browser.zen.desktop
+x-scheme-handler/unknown=io.github.zen_browser.zen.desktop
+inode/directory=org.kde.dolphin.desktop
