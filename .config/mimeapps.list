@@ -3,9 +3,10 @@ x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
 
 [Default Applications]
-text/html=zen-alpha.desktop
-x-scheme-handler/http=zen-alpha.desktop
-x-scheme-handler/https=zen-alpha.desktop
-x-scheme-handler/about=zen-alpha.desktop
-x-scheme-handler/unknown=zen-alpha.desktop
+text/html=zen-beta.desktop
+x-scheme-handler/http=zen-beta.desktop
+x-scheme-handler/https=zen-beta.desktop
+x-scheme-handler/about=zen-beta.desktop
+x-scheme-handler/unknown=zen-beta.desktop
 inode/directory=org.kde.dolphin.desktop
+application/uproject=com.epicgames.UnrealEngineEditor.desktop
