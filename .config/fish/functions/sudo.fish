@@ -4,6 +4,6 @@ function sudo --wraps=doas --description 'alias sudo=doas'
   if test -f /usr/bin/doas
 	  doas $argv
   else
-	  sudo $argv
+	  /usr/bin/sudo $argv
   end
 end
