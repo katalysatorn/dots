@@ -9,6 +9,7 @@
 
 [push]
 	autoSetupRemote = true
+	default = current
 
 [commit]
     ; Show full diff when editing commit message

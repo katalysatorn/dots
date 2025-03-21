@@ -7,19 +7,6 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-    "ssh_connections": [
-    {
-      "host": "beta",
-      "username": "builder",
-      "projects": [
-        {
-          "paths": [
-            "/abs/abs"
-          ]
-        }
-      ]
-    }
-  ],
     "theme": "Catppuccin Mocha (Blur)",
     "vim_mode": true,
     "ui_font_size": 20,
