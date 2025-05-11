@@ -58,6 +58,8 @@ alias vim='nvim'
 alias cc='cd; clear'
 alias gs='git status'
 alias gc='git commit -m'
+alias ga='git add .'
+alias gp='git push'
 
 # Shell integrations
 eval "$(fzf --zsh)"
