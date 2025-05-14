@@ -1,6 +1,7 @@
 [user]
 	email = me@katalysatorn.xyz
 	name = katalysatorn.
+	signingkey = D22EC5E382B578DDC02C1FB44DD86F8060A7B179
 
 [core]
     editor = nvim
@@ -14,6 +15,9 @@
 [commit]
     ; Show full diff when editing commit message
 	verbose = true
+	gpgsign = true
 
 [init]
 	defaultBranch = main
+[tag]
+	gpgSign = true
