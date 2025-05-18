@@ -62,6 +62,7 @@ alias gs='git status'
 alias gc='git commit -m'
 alias ga='git add .'
 alias gp='git push'
+alias :wq='exit'
 
 # Shell integrations
 eval "$(fzf --zsh)"
