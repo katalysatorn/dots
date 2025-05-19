@@ -1,0 +1,1 @@
+asusctl profile -P balanced
