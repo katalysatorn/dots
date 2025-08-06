@@ -1,1 +1,20 @@
 lazy-lock.json
+.config/Code - Insiders
+.config/Trolltech.conf
+.config/dconf
+.config/dolphinrc
+.config/freerdp
+.config/gtk-3.0/
+.config/gtkrc
+.config/gtkrc-2.0
+.config/kactivitymanagerdrc
+.config/kconf_updaterc
+.config/kde.org/
+.config/kdedefaults/
+.config/kdeglobals
+.config/pulse/
+.config/session/
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/xsettingsd/
+.config/remmina
