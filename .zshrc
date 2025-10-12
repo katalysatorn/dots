@@ -73,4 +73,5 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Fix GPG issues
 export GPG_TTY=$(tty)
+export EDITOR=nvim
 
