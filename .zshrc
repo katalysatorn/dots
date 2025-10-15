@@ -30,6 +30,7 @@ zinit light Aloxaf/fzf-tab
 autoload -Uz compinit && compinit
 
 export XDG_CACHE_DIR="$HOME/.cache"
+export GPG_TTY=$(tty)
 
 # History
 HISTSIZE=5000
