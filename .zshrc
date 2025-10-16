@@ -13,8 +13,6 @@ if [ ! -d "$ZINIT_HOME" ]; then
 	clear
 fi
 
-git -C "${HOME}/.dots" pull -q & disown
-
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Add in Powerlevel10k
