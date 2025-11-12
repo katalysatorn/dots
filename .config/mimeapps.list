@@ -1,9 +1,11 @@
 [Added Associations]
+application/pdf=zen-browser.desktop;
 video/mp4=vlc-2.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
 
 [Default Applications]
+application/pdf=zen-browser.desktop;
 application/uproject=com.epicgames.UnrealEngineEditor.desktop
 inode/directory=org.kde.dolphin.desktop
 text/html=zen-beta.desktop
@@ -11,10 +13,5 @@ video/mp4=vlc-2.desktop;
 x-scheme-handler/about=zen-beta.desktop
 x-scheme-handler/http=zen-beta.desktop
 x-scheme-handler/https=zen-beta.desktop
-x-scheme-handler/unknown=zen-beta.desktop
-x-scheme-handler/cider=cider.desktop
-x-scheme-handler/itms=cider.desktop
-x-scheme-handler/itmss=cider.desktop
-x-scheme-handler/music=cider.desktop
-x-scheme-handler/itunes=cider.desktop
 x-scheme-handler/nxm=modorganizer2-nxm-handler.desktop
+x-scheme-handler/unknown=zen-beta.desktop
