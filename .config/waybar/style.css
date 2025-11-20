@@ -8,8 +8,8 @@
 
 #waybar {
 	color: @text;
-	background-color: rgba(49, 50, 68, 0.5);
-	background: rgba(49, 50, 68, 0.3);
+	background-color: rgba(49, 50, 68, 0);
+	background: rgba(49, 50, 68, 0);
 	margin: 0px;
 	padding: 0px;
 }
@@ -85,7 +85,7 @@
 }
 
 #custom-music {
-	color: @lavenderd;
+	color: @white;
 	border-radius: 0;
 }
 
