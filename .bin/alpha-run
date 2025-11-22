@@ -1,10 +1,26 @@
 #!/bin/bash
-echo Setting profile for performance
-tuned-adm profile throughput-performance
-asusctl profile -P Performance
+set -e
 
-WAYLANDDRV_PRIMARY_MONITOR=DP-10 PROTON_ENABLE_WAYLAND=1 __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia gamemoderun "$@"
+LOGFILE="/tmp/game-tuning.log"
 
-echo Setting profile for quiet
-tuned-adm profile balanced
-asusctl profile -P LowPower
+echo Setting profile for performance >> "$LOGFILE"
+tuned-adm profile throughput-performance >> "$LOGFILE" 2>&1
+asusctl profile -P Performance >> "$LOGFILE" 2>&1
+
+export WAYLANDDRV_PRIMARY_MONITOR=DP-10
+export PROTON_ENABLE_WAYLAND=1 __NV_PRIME_RENDER_OFFLOAD=1
+export __VK_LAYER_NV_optimus=NVIDIA_only 
+export __GLX_VENDOR_LIBRARY_NAME=nvidia 
+
+if command -v gamemoded &>/dev/null; then
+    gamemoderun "$@" >> "$LOGFILE" 2>&1
+else
+    echo "GameMode is not installed. Skipping gamemoderun." >> "$LOGFILE"
+    "$@" >> "$LOGFILE" 2>&1
+fi
+
+echo Game exited >> "$LOGFILE"
+sleep 2
+echo Setting profile for quiet >> "$LOGFILE"
+tuned-adm -v profile powersave >> "$LOGFILE" 2>&1
+asusctl profile -P LowPower >> "$LOGFILE" 2>&1
