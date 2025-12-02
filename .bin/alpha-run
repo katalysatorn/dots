@@ -3,7 +3,7 @@ set -e
 
 LOGFILE="/tmp/game-tuning.log"
 
-echo Setting profile for performance >> "$LOGFILE"
+echo "Setting profile for performance" >> "$LOGFILE"
 tuned-adm profile throughput-performance >> "$LOGFILE" 2>&1
 asusctl profile -P Performance >> "$LOGFILE" 2>&1
 
@@ -12,15 +12,19 @@ export PROTON_ENABLE_WAYLAND=1 __NV_PRIME_RENDER_OFFLOAD=1
 export __VK_LAYER_NV_optimus=NVIDIA_only
 export __GLX_VENDOR_LIBRARY_NAME=nvidia
 
-if command -v gamemoded &>/dev/null; then
-    gamemoderun "$@" >> "$LOGFILE" 2>&1
-else
-    echo "GameMode is not installed. Skipping gamemoderun." >> "$LOGFILE"
-    "$@" >> "$LOGFILE" 2>&1
-fi
+# --- Start Game ---
+set +e
+gamemoderun "$@" >> "$LOGFILE" 2>&1 &
+GAMEPID=$!
+wait $GAMEPID
+EXITCODE=$?
+set -e
+# --- Game exited ---
 
-echo Game exited >> "$LOGFILE"
+echo "Game exited with code $EXITCODE" >> "$LOGFILE"
+
 sleep 2
-echo Setting profile for quiet >> "$LOGFILE"
+
+echo "Setting profile for quiet" >> "$LOGFILE"
 tuned-adm -v profile powersave >> "$LOGFILE" 2>&1
 asusctl profile -P LowPower >> "$LOGFILE" 2>&1
