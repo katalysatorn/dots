@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Switch to MUX (dGPU) Mode
-Comment=Switch supergfxctl to AsusMuxDgpu mode and ask before reboot
-Exec=sh -c 'supergfxctl -m AsusMuxDgpu && zenity --question --text="Reboot now to apply MUX mode?" && systemctl reboot'
-Terminal=false
-Type=Application
-Categories=System;
-Icon=computer

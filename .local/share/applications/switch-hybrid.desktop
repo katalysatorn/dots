@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Switch to Hybrid Mode
-Comment=Switch to Hybrid mode and confirm reboot
-Exec=sh -c 'supergfxctl -m Hybrid && zenity --question --text="Reboot now to apply Hybrid mode?" && systemctl reboot'
-Terminal=false
-Type=Application
-Categories=System;Settings;
-NoDisplay=false
-Icon=computer

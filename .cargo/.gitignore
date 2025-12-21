@@ -1,6 +1,0 @@
-git/
-.*-cache*
-registry/
-.crates.toml
-.crates2.json
-bin/

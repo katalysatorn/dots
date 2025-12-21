@@ -1,6 +1,0 @@
-show=drun
-always_parse_args=true
-term=kitty
-hide_scroll=true
-print_command=true
-insensitive=true
