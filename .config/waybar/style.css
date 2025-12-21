@@ -46,7 +46,7 @@
 #backlight,
 #clock,
 #battery,
-#pulseaudio,
+#wireplumber,
 #custom-lock {
 	padding: 0.2rem 1rem;
 	margin: 5px 0;
@@ -78,7 +78,7 @@
 	border-radius: 0;
 }
 
-#pulseaudio {
+#wireplumber{
 	color: @maroon;
 	border-radius: 0;
 	margin-left: 1rem;
