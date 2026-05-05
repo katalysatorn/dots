@@ -8,7 +8,6 @@
 
 #waybar {
 	color: @text;
-	background-color: rgba(49, 50, 68, 0);
 	background: rgba(49, 50, 68, 0);
 	margin: 0px;
 	padding: 0px;
