@@ -22,7 +22,7 @@
         "escape": true,
         "interval": 5,
         "tooltip": true,
-        "exec": "playerctl metadata --format='|{{title}}| by {{artist}}'",
+        "exec": "playerctl metadata --format='[ {{title}} ] by {{artist}}'",
         "on-click": "playerctl play-pause",
         "max-length": 70
     },
@@ -40,8 +40,8 @@
 	},
     "clock": {
         "timezone": "Pacific/Auckland",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "[{:%Y-%m-%d - %H:%M}]",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "format": "[{:%Y-%m-%d | %H:%M}]",
         "format-alt": "[{:%Y-%m-%d}]"
     },
     "wireplumber": {
