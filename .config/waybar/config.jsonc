@@ -15,7 +15,7 @@
     "backlight": {
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "scroll-step": 10, // %, can be a float
+        "scroll-step": 10 // %, can be a float
 	},
     "custom/music": {
         "format": "{}",
@@ -32,10 +32,10 @@
             		"critical": 15
         	},
         	"format": "{icon} {capacity}%",
-        	"format-charging": "C {capacity}%",
-        	"format-plugged": " ",
+        	"format-charging": " {capacity}%",
+        	"format-plugged": "",
         	"format-alt": "{time} {icon}",
-        	"format-full": "F",
+        	"format-full": " ",
         	"format-icons": [" ", " ", " ", " ", " "]
 	},
     "clock": {
