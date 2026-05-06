@@ -6,7 +6,10 @@ button-variant = "basic"
 monitor = "*"
 show = true
 left = [
+    { name = "titlebar", modules = [
+    "dashboard",
     "hyprland-workspaces",
+] },
     "window-title",
 ]
 center = ["media"]
@@ -43,6 +46,10 @@ label-show = false
 format = "%Y-%m-%d %I:%M %p"
 icon-show = false
 
+[modules.dashboard]
+icon-color = "status-info"
+dropdown-lock-command = "swaylock"
+
 [modules.hyprland-workspaces]
 app-icons-show = true
 
@@ -57,3 +64,12 @@ label-show = false
 
 [modules.notification]
 popup-close-behavior = "remove"
+
+[modules.volume]
+scroll-up = "wayle audio output-volume +5"
+scroll-down = "wayle audio output-volume -5"
+
+[modules.window-title]
+icon-show = false
+icon-bg-color = "auto"
+label-color = "auto"
