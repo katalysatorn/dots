@@ -1,5 +1,7 @@
 [bar]
+scale = 0.85
 bg = "transparent"
+rounding = "full"
 button-variant = "basic"
 
 [[bar.layout]]
@@ -63,6 +65,7 @@ label-show = false
 label-show = false
 
 [modules.notification]
+popup-monitor = "DP-2"
 popup-close-behavior = "remove"
 
 [modules.volume]
