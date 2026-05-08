@@ -7,9 +7,6 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-    "project_panel": {
-        "dock": "left"
-    },
     "base_keymap": "VSCode",
     "theme": "Catppuccin Mocha (Blur)",
     "vim_mode": true,
@@ -19,24 +16,24 @@
     "autosave": "on_focus_change",
     "buffer_font_family": "FiraCode Nerd Font Mono",
     "buffer_font_features": {
-        "calt": true,
+        "calt": true
     },
     "current_line_highlight": "gutter",
     "scrollbar": {
-        "show": "never",
+        "show": "never"
     },
     "tab_bar": {
-        "show_nav_history_buttons": false,
+        "show_nav_history_buttons": false
     },
     "tabs": {
         "git_status": true,
-        "file_icons": true,
+        "file_icons": true
     },
     "journal": {
         // I actually don't know what this is yet...
-        "hour_format": "hour24",
+        "hour_format": "hour24"
     },
     "tab_size": 4,
     "ensure_final_newline_on_save": true,
-    "relative_line_numbers": "enabled",
+    "relative_line_numbers": true
 }
