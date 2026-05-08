@@ -66,7 +66,7 @@ label-show = false
 label-show = false
 
 [modules.notification]
-popup-monitor = "DP-2"
+popup-monitor = "DP-3"
 popup-close-behavior = "remove"
 
 [modules.volume]
@@ -77,3 +77,6 @@ scroll-down = "wayle audio output-volume -5"
 icon-show = false
 icon-bg-color = "auto"
 label-color = "auto"
+
+[osd]
+monitor = "secondary"
